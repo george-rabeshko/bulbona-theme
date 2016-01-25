@@ -59,7 +59,7 @@
         </header>
 
         <!-- BEGIN: content -->
-        <div class="content page-404 container-fluid">
+        <div class="content page-404 gray-block container-fluid">
             <div class="container">
                 <!-- BEGIN: 404-page -->
                 <div class="row">

@@ -2,25 +2,16 @@
 
 // 404 page
 .page-404 {
-    background-color: #F7F7F7;
     padding-top: 25px;
 
     .row {
         h1 {
+            font-family: $font-name-bold, sans-serif;
             font-size: 59px;
             letter-spacing: 1px;
             line-height: 59px;
             margin: 80px 0 40px;
             text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
-        }
-
-        h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        h1, h2 {
-            font-family: $font-name-bold, sans-serif;
             text-transform: uppercase;
         }
 

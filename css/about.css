@@ -20,6 +20,18 @@ a:hover {
   -webkit-transition: all 0.2s ease-in-out;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 1.8em;
+}
+
+h2 {
+  font-family: "Ubuntu-B", sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
 input[type='text'], input[type='email'], input[type='password'], textarea {
   border: 1px solid #E2E2E2;
   font-size: 14px;
@@ -71,6 +83,18 @@ input[type='submit']:hover, input[type='button']:hover {
   color: #fff;
 }
 
+.lead {
+  color: #B39964;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 1.3em;
+}
+
+.jumbotron-heading {
+  font-size: 36px;
+}
+
 .vcenter {
   display: inline-block;
   float: none;
@@ -96,7 +120,7 @@ input[type='submit']:hover, input[type='button']:hover {
   font-size: 13px;
 }
 .navbar-custom .navbar-nav .nav-link {
-  color: #444;
+  color: #333;
   font-family: "Ubuntu-B", sans-serif;
   margin: 0 8px;
 }
@@ -107,7 +131,7 @@ input[type='submit']:hover, input[type='button']:hover {
   color: #B39964;
 }
 .navbar-custom .navbar-nav .reservation {
-  border: 1px solid #444;
+  border: 1px solid #333;
   font-family: "Ubuntu-R";
   margin: 0;
   padding-left: 15px;
@@ -120,6 +144,7 @@ input[type='submit']:hover, input[type='button']:hover {
 
 .content {
   box-shadow: 0 0 10px #D7D7D7;
+  padding: 0;
 }
 .content h3 {
   font-family: "Ubuntu-B";
@@ -157,7 +182,7 @@ input[type='submit']:hover, input[type='button']:hover {
   padding: 65px 0;
 }
 .footer .copyright {
-  background-color: #444;
+  background-color: #333;
 }
 .footer .copyright .row {
   color: #777;
@@ -166,4 +191,55 @@ input[type='submit']:hover, input[type='button']:hover {
 }
 .footer .copyright .row p, .footer .copyright .row a {
   font-size: 12px;
+}
+
+.slick-dots {
+  bottom: 0;
+}
+.slick-dots li {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  height: 15px;
+  margin: 0 3px 5px 2px;
+  width: 15px;
+}
+.slick-dots li button {
+  background-color: #888;
+  border: 6px solid #fff;
+  height: 15px;
+  padding: 0;
+  width: 15px;
+}
+.slick-dots li.slick-active button {
+  background-color: #555;
+}
+
+.main-photo {
+  background-color: #5C9188;
+  height: 100vh;
+  width: auto;
+}
+.main-photo img {
+  margin: 0 auto;
+  padding-top: 25vh;
+}
+
+.mission .mission-carousel {
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.mission .mission-carousel img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.promo-banner {
+  background-color: #998356;
+  color: #fff;
+  margin: 0;
+}
+.promo-banner .slicker-button {
+  margin-top: 25%;
 }

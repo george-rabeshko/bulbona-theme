@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/photo.css">
 </head>
 <body>
     <div class="main-wrapper">
@@ -59,68 +56,25 @@
                 </nav>
             </div>
             <!-- END: top-menu -->
-
-            <!-- BEGIN: main-photo -->
-            <div class="row main-photo">
-                <img src="images/isolated-1.png" class="img-fluid" alt="main-photo">
-            </div>
-            <!-- END: main-photo -->
         </header>
 
         <!-- BEGIN: content -->
-        <div class="content mission container-fluid">
+        <div class="content page-404 gray-block container-fluid">
             <div class="container">
-                <!-- BEGIN: mission -->
+                <!-- BEGIN: 404-page -->
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="mission-carousel">
-                            <img src="images/corporate-mini-1.jpg" class="img-fluid" alt="corporate-mini-1">
-                            <img src="images/corporate-mini-2.jpg" class="img-fluid" alt="corporate-mini-2">
-                            <img src="images/corporate-mini-3.jpg" class="img-fluid" alt="corporate-mini-3">
-                        </div>
+                        <img src="images/flat-desktop.png" class="img-fluid" alt="no-image">
                     </div>
 
                     <div class="col-md-6">
-                        <h2>Our mission</h2>
-                        <p class="lead">Consistently think across the full value chain, while our solid, multi-source, scoping technically strengthens the enabler</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a href="#" class="button">Reserve now</a>
+                        <h1>404 Error</h1>
+                        <h2>Sorry, you broke the internet</h2>
+                        <p>The page you are trying to reach does not exist, or has been moved. Please use the menus or the search box to find what you are looking for. Perhaps searching can help.</p>
+                        <a href="#" class="button">Back home</a>
                     </div>
                 </div>
-                <!-- END: mission -->
-            </div>
-
-            <div class="container">
-                <!-- BEGIN: about -->
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2>Lorem ipsum dolor sit amet</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2>Lorem ipsum dolor sit amet, consectetur</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <!-- END: about -->
-            </div>
-
-            <div class="jumbotron-fluid promo-banner">
-                <div class="container">
-                    <!-- BEGIN: promo-banner -->
-                    <div class="row">
-                        <div class="col-md-10">
-                            <h2 class="jumbotron-heading">Get Edena now and build your website today</h2>
-                            <p>Quick and easy web solution</p>
-                        </div>
-
-                        <div class="col-md-2">
-                            <a href="#" class="slicker-button">Reservation</a>
-                        </div>
-                    </div>
-                    <!-- END: promo-banner -->
-                </div>
+                <!-- END: 404-page -->
             </div>
         </div>
         <!-- END: content -->
@@ -173,11 +127,6 @@
 
     <!-- JS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-    <script src="slick/slick.min.js"></script>
-    <script src="js/slicker.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,1 +1,42 @@
 @import '../style';
+
+//variables
+$main-photo-bg-color: #5C9188;
+
+// main-photo
+.main-photo {
+    background-color: $main-photo-bg-color;
+    height: 100vh;
+    width: auto;
+    
+    img {
+        margin: 0 auto;
+        padding-top: 25vh;
+    }
+}
+
+.mission {
+
+    .mission-carousel {
+        display: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        img {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+    }
+}
+
+.promo-banner {
+    background-color: #998356;
+    color: #fff;
+    margin: 0;
+
+    .slicker-button {
+        @include empty-space-m(25%);
+    }
+}

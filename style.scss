@@ -1,6 +1,11 @@
 // variables
 $active-color: #B39964;
-$passive-color: #444;
+$hover-color: #997F4B;
+$passive-color: #333;
+$gray-block-bg-color: #F7F7F7;
+$copyright-text-color: #777;
+$border-shadow-color: #D7D7D7;
+
 $font-name-regular: 'Ubuntu-R';
 $font-name-bold: 'Ubuntu-B';
 
@@ -44,6 +49,14 @@ $font-name-bold: 'Ubuntu-B';
     }
 }
 
+@mixin empty-space-m($num) {
+    margin-top: $num;
+}
+
+@mixin empty-space-p($num) {
+    padding-top: $num;
+}
+
 a {
     color: #b39964;
     text-decoration: none !important;
@@ -53,6 +66,18 @@ a {
         color: #997F4B;
         @include transition-effect(.20s);
     }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.8em;
+}
+
+h2 {
+    font-family: $font-name-bold, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 input[type='text'], input[type='email'], input[type='password'], textarea {
@@ -71,12 +96,24 @@ input[type='submit'], input[type='button'] {
 }
 
 .button {
-    @include button(#B39964, 12px, #997F4B);
+    @include button($active-color, 12px, $hover-color);
 }
 
 .slicker-button {
-    @include button(#B39964, 17px, #997F4B);
+    @include button($active-color, 17px, $hover-color);
     padding: 10px 35px;
+}
+
+.lead {
+    color: $active-color;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 1.3em;
+}
+
+.jumbotron-heading {
+    font-size: 36px;
 }
 
 .vcenter {
@@ -88,7 +125,7 @@ input[type='submit'], input[type='button'] {
 }
 
 .gray-block {
-    background-color: #F7F7F7;
+    background-color: $gray-block-bg-color;
 }
 
 // navbar
@@ -105,7 +142,7 @@ input[type='submit'], input[type='button'] {
 
     .navbar-nav {
         .nav-link {
-            color: #444;
+            color: $passive-color;
             font-family: $font-name-bold, sans-serif;
             margin: 0 8px;
         }
@@ -135,7 +172,8 @@ input[type='submit'], input[type='button'] {
 
 // content
 .content {
-    box-shadow: 0 0 10px #D7D7D7;
+    box-shadow: 0 0 10px $border-shadow-color;
+    padding: 0;
 
     h3 {
         font-family: $font-name-bold;
@@ -154,7 +192,7 @@ input[type='submit'], input[type='button'] {
     }
 
     .finally {
-        border-bottom: 1px solid #D7D7D7;
+        border-bottom: 1px solid $border-shadow-color;
 
         .row {
             padding-bottom: 0;
@@ -182,16 +220,40 @@ input[type='submit'], input[type='button'] {
     }
 
     .copyright {
-        background-color: #444;
+        background-color: $passive-color;
 
         .row {
-            color: #777;
+            color: $copyright-text-color;
             padding: 30px 0 15px;
             text-align: center;
 
             p, a {
                 font-size: 12px;
             }
+        }
+    }
+}
+
+// slick
+.slick-dots {
+    bottom: 0;
+
+    li {
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+        height: 15px;
+        margin: 0 3px 5px 2px;
+        width: 15px;
+
+        button {
+            background-color: #888;
+            border: 6px solid #fff;
+            height: 15px;
+            padding: 0;
+            width: 15px;
+        }
+
+        &.slick-active button {
+            background-color: #555;
         }
     }
 }
