@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Ubuntu-R";
+  src: url("../fonts/Ubuntu-R.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-B";
+  src: url("../fonts/Ubuntu-B.ttf");
+}
+a {
+  color: #b39964;
+  text-decoration: none !important;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+a:hover {
+  color: #997F4B;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+input[type='text'], input[type='email'], input[type='password'], textarea {
+  border: 1px solid #E2E2E2;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+input[type='submit'], input[type='button'] {
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+input[type='submit']:hover, input[type='button']:hover {
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.button {
+  background-color: #B39964;
+  border: none;
+  color: #fff;
+  font-family: Ubuntu-R, sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: #997F4B;
+  color: #fff;
+}
+
+.slicker-button {
+  background-color: #B39964;
+  border: none;
+  color: #fff;
+  font-family: Ubuntu-R, sans-serif;
+  font-size: 17px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 35px;
+}
+.slicker-button:hover {
+  background-color: #997F4B;
+  color: #fff;
+}
+
+.vcenter {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+
+.empty-space {
+  padding-top: 80px;
+}
+
+.gray-block {
+  background-color: #F7F7F7;
+}
+
+.navbar-custom {
+  background-color: #fff;
+  border-bottom: 1px solid #ECECEC;
+  padding: 22.5px 0;
+  text-transform: uppercase;
+}
+.navbar-custom .nav {
+  float: right;
+  font-size: 13px;
+}
+.navbar-custom .navbar-nav .nav-link {
+  color: #444;
+  font-family: "Ubuntu-B", sans-serif;
+  margin: 0 8px;
+}
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .active > .nav-link,
+.navbar-custom .navbar-nav .active > .nav-link:hover {
+  border-bottom: 2px solid #B39964;
+  color: #B39964;
+}
+.navbar-custom .navbar-nav .reservation {
+  border: 1px solid #444;
+  font-family: "Ubuntu-R";
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar-custom .navbar-nav .reservation:hover {
+  border: 1px solid #B39964;
+  color: #B39964;
+}
+
+.content {
+  box-shadow: 0 0 10px #D7D7D7;
+}
+.content h3 {
+  font-family: "Ubuntu-B";
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.content .row {
+  font-family: "Ubuntu-R", sans-serif;
+  padding: 80px 0 55px 0;
+}
+.content .row div {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+.content .finally {
+  border-bottom: 1px solid #D7D7D7;
+}
+.content .finally .row {
+  padding-bottom: 0;
+}
+
+.footer {
+  font-family: "Ubuntu-R", sans-serif;
+}
+.footer h3 {
+  font-family: "Ubuntu-B";
+  font-size: 16px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.footer p, .footer a {
+  font-size: 14px;
+}
+.footer .row {
+  padding: 65px 0;
+}
+.footer .copyright {
+  background-color: #444;
+}
+.footer .copyright .row {
+  color: #777;
+  padding: 30px 0 15px;
+  text-align: center;
+}
+.footer .copyright .row p, .footer .copyright .row a {
+  font-size: 12px;
+}
+
+.page-404 {
+  background-color: #F7F7F7;
+  padding-top: 25px;
+}
+.page-404 .row h1 {
+  font-size: 59px;
+  letter-spacing: 1px;
+  line-height: 59px;
+  margin: 80px 0 40px;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.page-404 .row h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.page-404 .row h1, .page-404 .row h2 {
+  font-family: "Ubuntu-B", sans-serif;
+  text-transform: uppercase;
+}
+.page-404 .row p {
+  line-height: 1.5em;
+}
+.page-404 .row div {
+  padding-left: 23px;
+  padding-right: 23px;
+}

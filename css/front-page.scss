@@ -1,0 +1,143 @@
+@import '../style';
+
+// general
+@font-face {
+    font-family: Pixeden;
+    src:url('../fonts/Pe-icon-7-stroke.eot?d7yf1v');
+    src:url('../fonts/Pe-icon-7-stroke.eot?#iefixd7yf1v') format('embedded-opentype'),
+    url('../fonts/Pe-icon-7-stroke.woff?d7yf1v') format('woff'),
+    url('../fonts/Pe-icon-7-stroke.ttf?d7yf1v') format('truetype'),
+    url('../fonts/Pe-icon-7-stroke.svg?d7yf1v#Pe-icon-7-stroke') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin font-icon() {
+    display: inline-block;
+    font-family: Pixeden, sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// slick custom styles
+.slick-dots {
+    bottom: 0;
+}
+
+.slick-prev {
+    left: 20px;
+
+    &:before {
+        content: '\e686';
+        @include font-icon();
+    }
+}
+
+.slick-next {
+    right: 20px;
+
+    &:before {
+        content: '\e684';
+        @include font-icon();
+    }
+}
+
+.slick-prev, .slick-next {
+    z-index: 1000;
+}
+
+.slick-arrow, .slick-arrow:focus {
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    opacity: 0;
+    @include transition-effect(.25s);
+
+    &:hover {
+        background-color: #fff;
+        cursor: pointer;
+
+        &:before {
+            color: #aaa;
+        }
+    }
+}
+
+.slick-dots {
+    li {
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+        height: 15px;
+        margin: 0 3px 5px 2px;
+        width: 15px;
+
+        button {
+            background-color: #888;
+            border: 6px solid #fff;
+            height: 15px;
+            padding: 0;
+            width: 15px;
+        }
+
+        &.slick-active button {
+            background-color: #555;
+        }
+    }
+}
+
+// mine slick styles
+.slicker {
+    height: 100%;
+    margin: 80px auto 0;
+    max-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+
+    &:hover .slick-arrow {
+        opacity: 1;
+        @include transition-effect(.25s);
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.slicker-caption {
+    background: url('../images/gridtile.png') repeat;
+    color: #fff;
+    font-family: Ubuntu-B, sans-serif;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    .slicker-content {
+        margin: 0 auto;
+        position: relative;
+        top: 33.5vh;
+        width: 80%;
+
+        h3 {
+            font-size: 59px;
+            letter-spacing: 1px;
+            line-height: 59px;
+            margin: 0;
+            text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        p {
+            font-size: 25px;
+            line-height: 25px;
+            margin: 15px 0;
+        }
+    }
+}

@@ -1,0 +1,197 @@
+// variables
+$active-color: #B39964;
+$passive-color: #444;
+$font-name-regular: 'Ubuntu-R';
+$font-name-bold: 'Ubuntu-B';
+
+// general
+@font-face {
+    font-family: $font-name-regular;
+    src: url("../fonts/Ubuntu-R.ttf");
+}
+
+@font-face {
+    font-family: $font-name-bold;
+    src: url("../fonts/Ubuntu-B.ttf");
+}
+
+@mixin transition-effect($seconds) {
+    transition: all $seconds ease-in-out;
+    -moz-transition: all $seconds ease-in-out;
+    -webkit-transition: all $seconds ease-in-out;
+}
+
+@mixin vcenter() {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+
+@mixin button($bg-color, $font-size, $bg-color-hover) {
+    background-color: $bg-color;
+    border: none;
+    color: #fff;
+    font-family: Ubuntu-R, sans-serif;
+    font-size: $font-size;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $bg-color-hover;
+        color: #fff;
+    }
+}
+
+a {
+    color: #b39964;
+    text-decoration: none !important;
+    @include transition-effect(.20s);
+
+    &:hover {
+        color: #997F4B;
+        @include transition-effect(.20s);
+    }
+}
+
+input[type='text'], input[type='email'], input[type='password'], textarea {
+    border: 1px solid #E2E2E2;
+    font-size: 14px;
+    margin-bottom: 10px ;
+    padding: 5px 10px;
+}
+
+input[type='submit'], input[type='button'] {
+    @include transition-effect(.20s);
+
+    &:hover {
+        @include transition-effect(.20s);
+    }
+}
+
+.button {
+    @include button(#B39964, 12px, #997F4B);
+}
+
+.slicker-button {
+    @include button(#B39964, 17px, #997F4B);
+    padding: 10px 35px;
+}
+
+.vcenter {
+    @include vcenter();
+}
+
+.empty-space {
+    padding-top: 80px;
+}
+
+.gray-block {
+    background-color: #F7F7F7;
+}
+
+// navbar
+.navbar-custom {
+    background-color: #fff;
+    border-bottom: 1px solid #ECECEC;
+    padding: 22.5px 0;
+    text-transform: uppercase;
+
+    .nav {
+        float: right;
+        font-size: 13px;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            color: #444;
+            font-family: $font-name-bold, sans-serif;
+            margin: 0 8px;
+        }
+
+
+        .nav-link:hover,
+        .active > .nav-link,
+        .active > .nav-link:hover {
+            border-bottom: 2px solid $active-color;
+            color: $active-color;
+        }
+
+        .reservation {
+            border: 1px solid $passive-color;
+            font-family: $font-name-regular;
+            margin: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            &:hover {
+                border: 1px solid $active-color;
+                color: $active-color;
+            }
+        }
+    }
+}
+
+// content
+.content {
+    box-shadow: 0 0 10px #D7D7D7;
+
+    h3 {
+        font-family: $font-name-bold;
+        line-height: 1.5em;
+        text-transform: uppercase;
+    }
+
+    .row {
+        font-family: $font-name-regular, sans-serif;
+        padding: 80px 0 55px 0;
+
+        div {
+            padding-left: 23px;
+            padding-right: 23px;
+        }
+    }
+
+    .finally {
+        border-bottom: 1px solid #D7D7D7;
+
+        .row {
+            padding-bottom: 0;
+        }
+    }
+}
+
+//footer
+.footer {
+    font-family: $font-name-regular, sans-serif;
+
+    h3 {
+        font-family: $font-name-bold;
+        font-size: 16px;
+        line-height: 1.5em;
+        text-transform: uppercase;
+    }
+
+    p, a {
+        font-size: 14px;
+    }
+
+    .row {
+        padding: 65px 0;
+    }
+
+    .copyright {
+        background-color: #444;
+
+        .row {
+            color: #777;
+            padding: 30px 0 15px;
+            text-align: center;
+
+            p, a {
+                font-size: 12px;
+            }
+        }
+    }
+}
