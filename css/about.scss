@@ -40,3 +40,7 @@ $main-photo-bg-color: #5C9188;
         @include empty-space-m(25%);
     }
 }
+
+.about .row {
+    @include empty-space-p(1.8em)
+}

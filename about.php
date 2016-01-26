@@ -68,9 +68,9 @@
         </header>
 
         <!-- BEGIN: content -->
-        <div class="content mission container-fluid">
-            <div class="container">
-                <!-- BEGIN: mission -->
+        <div class="content container-fluid">
+            <!-- BEGIN: mission -->
+            <div class="container mission">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mission-carousel">
@@ -87,11 +87,11 @@
                         <a href="#" class="button">Reserve now</a>
                     </div>
                 </div>
-                <!-- END: mission -->
             </div>
+            <!-- END: mission -->
 
-            <div class="container">
-                <!-- BEGIN: about -->
+            <!-- BEGIN: about -->
+            <div class="container about">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h2>Lorem ipsum dolor sit amet</h2>
@@ -103,12 +103,12 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
-                <!-- END: about -->
             </div>
+            <!-- END: about -->
 
+            <!-- BEGIN: promo-banner -->
             <div class="jumbotron-fluid promo-banner">
                 <div class="container">
-                    <!-- BEGIN: promo-banner -->
                     <div class="row">
                         <div class="col-md-10">
                             <h2 class="jumbotron-heading">Get Edena now and build your website today</h2>
@@ -119,15 +119,15 @@
                             <a href="#" class="slicker-button">Reservation</a>
                         </div>
                     </div>
-                    <!-- END: promo-banner -->
                 </div>
             </div>
+            <!-- END: promo-banner -->
         </div>
         <!-- END: content -->
 
         <footer class="footer">
+            <!-- BEGIN: footer-information -->
             <div class="container">
-                <!-- BEGIN: footer-information -->
                 <div class="row">
                     <div class="col-md-3">
                         <h3>EDENA by Little Neko</h3>
@@ -154,20 +154,20 @@
                         </form>
                     </div>
                 </div>
-                <!-- END: footer-information -->
             </div>
+            <!-- END: footer-information -->
 
+            <!-- BEGIN: copyright -->
             <div class="container-fluid copyright">
                 <div class="container">
-                    <!-- BEGIN: copyright -->
                     <div class="row">
                         <div class="col-md-12">
                             <p class="">Copyright © 2015 Little NEKO / All rights reserved.</p>
                         </div>
                     </div>
-                    <!-- END: copyright -->
                 </div>
             </div>
+            <!-- END: copyright -->
         </footer>
     </div>
 

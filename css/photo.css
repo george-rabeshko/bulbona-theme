@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "Ubuntu-R";
+  src: url("../fonts/Ubuntu-R.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-B";
+  src: url("../fonts/Ubuntu-B.ttf");
+}
+a {
+  color: #b39964;
+  text-decoration: none !important;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+a:hover {
+  color: #997F4B;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.8em;
+}
+
+h1 {
+  color: #222;
+  font-family: "Ubuntu-B", sans-serif;
+  font-size: 58px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #222;
+  font-family: "Ubuntu-B", sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+input[type='text'], input[type='email'], input[type='password'], textarea {
+  border: 1px solid #E2E2E2;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+input[type='submit'], input[type='button'] {
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+input[type='submit']:hover, input[type='button']:hover {
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.button {
+  background-color: #B39964;
+  border: none;
+  color: #fff;
+  font-family: Ubuntu-R, sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: #997F4B;
+  color: #fff;
+}
+
+.slicker-button {
+  background-color: #B39964;
+  border: none;
+  color: #fff;
+  font-family: Ubuntu-R, sans-serif;
+  font-size: 17px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 35px;
+}
+.slicker-button:hover {
+  background-color: #997F4B;
+  color: #fff;
+}
+
+.lead {
+  color: #B39964;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 1.3em;
+}
+
+.explanation-gray {
+  color: #ccc;
+  font-family: "Ubuntu-B";
+  font-size: 24px;
+  margin-bottom: .25em;
+  text-transform: uppercase;
+}
+
+.explanation-brown {
+  color: #B39964;
+  font-family: "Ubuntu-B";
+  font-size: 16px;
+  margin-bottom: .25em;
+  text-transform: uppercase;
+}
+
+.jumbotron-heading {
+  color: #fff;
+  font-size: 36px;
+}
+
+.vcenter {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+
+.empty-space {
+  padding-top: 80px;
+}
+
+.gray-block {
+  background-color: #F7F7F7;
+}
+
+.navbar-custom {
+  background-color: #fff;
+  border-bottom: 1px solid #ECECEC;
+  padding: 22.5px 0;
+  text-transform: uppercase;
+}
+.navbar-custom .nav {
+  float: right;
+  font-size: 13px;
+}
+.navbar-custom .navbar-nav .nav-link {
+  color: #222;
+  font-family: "Ubuntu-B", sans-serif;
+  margin: 0 8px;
+}
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .active > .nav-link,
+.navbar-custom .navbar-nav .active > .nav-link:hover {
+  border-bottom: 2px solid #B39964;
+  color: #B39964;
+}
+.navbar-custom .navbar-nav .reservation {
+  border: 1px solid #222;
+  font-family: "Ubuntu-R";
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar-custom .navbar-nav .reservation:hover {
+  border: 1px solid #B39964;
+  color: #B39964;
+}
+
+.content {
+  box-shadow: 0 0 10px #D7D7D7;
+  padding: 0;
+}
+.content h3 {
+  color: #333;
+  font-family: "Ubuntu-B";
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.content .row {
+  padding: 80px 0 55px 0;
+}
+.content .row div {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+.content .row, .content .row-fluid {
+  font-family: "Ubuntu-R", sans-serif;
+}
+.content .finally {
+  border-bottom: 1px solid #D7D7D7;
+}
+.content .finally .row {
+  padding-bottom: 0;
+}
+.content .container-fluid {
+  padding: 0;
+}
+
+.footer {
+  font-family: "Ubuntu-R", sans-serif;
+}
+.footer h3 {
+  font-family: "Ubuntu-B";
+  font-size: 16px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.footer p, .footer a {
+  font-size: 14px;
+}
+.footer .row {
+  padding: 65px 0;
+}
+.footer .copyright {
+  background-color: #444;
+}
+.footer .copyright .row {
+  color: #777;
+  padding: 30px 0 10px;
+  text-align: center;
+}
+.footer .copyright .row p, .footer .copyright .row a {
+  font-size: 12px;
+}
+
+.slick-dots {
+  bottom: 0;
+}
+.slick-dots li {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  height: 15px;
+  margin: 0 3px 5px 2px;
+  width: 15px;
+}
+.slick-dots li button {
+  background-color: #888;
+  border: 6px solid #fff;
+  height: 15px;
+  padding: 0;
+  width: 15px;
+}
+.slick-dots li.slick-active button {
+  background-color: #555;
+}
+
+.main-photo {
+  text-align: center;
+  width: auto;
+  margin-top: 80px;
+}
+
+.gallery-intro {
+  margin-top: 10px;
+}
+.gallery-intro .row-fluid div {
+  padding: 105px;
+}
+.gallery-intro .row-fluid div h2 {
+  font-size: 36px;
+}
+.gallery-intro .row-fluid:first-of-type div:first-of-type {
+  background-color: #F7F7F7;
+}
+.gallery-intro .row-fluid:first-of-type div:last-of-type {
+  background: url("../images/news-2.jpg") no-repeat;
+  background-size: cover;
+  height: inherit;
+  visibility: hidden;
+}
+.gallery-intro .row-fluid:last-of-type div:first-of-type {
+  background: url("../images/news-1.jpg") no-repeat;
+  background-size: cover;
+  visibility: hidden;
+}
+.gallery-intro .row-fluid:last-of-type div:last-of-type {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.gallery-intro .row-fluid:last-of-type div:last-of-type h2 {
+  color: #fff;
+}

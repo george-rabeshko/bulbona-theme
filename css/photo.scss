@@ -1,0 +1,52 @@
+@import '../style';
+
+// main-photo
+.main-photo {
+    text-align: center;
+    width: auto;
+    @include empty-space-m(80px)
+}
+
+.gallery-intro {
+    @include empty-space-m(10px);
+
+    .row-fluid {
+        div {
+            padding: 105px;
+
+            h2 {
+                font-size: 36px;
+            }
+        }
+    }
+
+    .row-fluid:first-of-type {
+        div:first-of-type {
+            background-color: $gray-block-bg-color;
+        }
+
+        div:last-of-type {
+            background: url('../images/news-2.jpg') no-repeat;
+            background-size: cover;
+            height: inherit;
+            visibility: hidden;
+        }
+    }
+
+    .row-fluid:last-of-type {
+        div:first-of-type {
+            background: url('../images/news-1.jpg') no-repeat;
+            background-size: cover;
+            visibility: hidden;
+        }
+
+        div:last-of-type {
+            background-color: #1e1e1e;
+            color: #fff;
+
+            h2 {
+                color: #fff;
+            }
+        }
+    }
+}

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="photoset-grid/css/colorbox.css" />
+
     <link rel="stylesheet" href="css/photo.css">
 </head>
 <body>
@@ -59,22 +61,58 @@
         </header>
 
         <!-- BEGIN: content -->
-        <div class="content page-404 gray-block container-fluid">
+        <div class="content container-fluid">
             <div class="container">
-                <!-- BEGIN: 404-page -->
-                <div class="row">
+               <!-- BEGIN: main-photo -->
+               <div class="row main-photo">
+                   <span class="explanation-gray">Our work</span>
+                   <h1>Awesome photo gallery</h1>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               </div>
+               <!-- END: main-photo -->
+            </div>
+
+            <div class="container-fluid gallery-intro">
+                <div class="row-fluid clearfix">
                     <div class="col-md-6">
-                        <img src="images/flat-desktop.png" class="img-fluid" alt="no-image">
+                        <span class="explanation-brown">Unlimited layouts</span>
+                        <h2>Explore your creativity</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </div>
 
+                    <div class="col-md-6"></div>
+                </div>
+
+                <div class="row-fluid clearfix">
+                    <div class="col-md-6"></div>
+
                     <div class="col-md-6">
-                        <h1>404 Error</h1>
-                        <h2>Sorry, you broke the internet</h2>
-                        <p>The page you are trying to reach does not exist, or has been moved. Please use the menus or the search box to find what you are looking for. Perhaps searching can help.</p>
-                        <a href="#" class="button">Back home</a>
+                        <span class="explanation-brown">Unlimited layouts</span>
+                        <h2>Easy customization</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </div>
                 </div>
-                <!-- END: 404-page -->
+            </div>
+
+            <div class="container">
+                <!-- BEGIN: gallery -->
+                <div class="row">
+                    <div class="photoset-grid-lightbox" data-layout="3423" style="visibility: hidden;">
+                        <img src="photoset-grid/img/demo/withhearts3-highres.jpg">
+                        <img src="photoset-grid/img/demo/withhearts4-highres.jpg">
+                        <img src="photoset-grid/img/demo/withhearts5-highres.jpg">
+                        <img src="photoset-grid/img/demo/nyc1-highres.jpg">
+                        <img src="photoset-grid/img/demo/nyc2-highres.jpg">
+                        <img src="photoset-grid/img/demo/nyc4-highres.jpg">
+                        <img src="photoset-grid/img/demo/print1-highres.jpg">
+                        <img src="photoset-grid/img/demo/print2-highres.jpg">
+                        <img src="photoset-grid/img/demo/print3-highres.jpg">
+                        <img src="photoset-grid/img/demo/nyc3-highres.jpg">
+                        <img src="photoset-grid/img/demo/withhearts1-highres.jpg">
+                        <img src="photoset-grid/img/demo/withhearts2-highres.jpg">
+                    </div>
+                </div>
+                <!-- END: gallery -->
             </div>
         </div>
         <!-- END: content -->
@@ -128,5 +166,8 @@
     <!-- JS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="photoset-grid/js/jquery.colorbox.js"></script>
+    <script src="photoset-grid/jquery.photoset-grid.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>

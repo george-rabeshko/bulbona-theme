@@ -1,8 +1,9 @@
 // variables
 $active-color: #B39964;
 $hover-color: #997F4B;
-$passive-color: #333;
+$passive-color: #222;
 $gray-block-bg-color: #F7F7F7;
+$copyright-bg-color: #444;
 $copyright-text-color: #777;
 $border-shadow-color: #D7D7D7;
 
@@ -49,12 +50,28 @@ $font-name-bold: 'Ubuntu-B';
     }
 }
 
+@mixin headline($font-size, $margin-bottom) {
+    color: $passive-color;
+    font-family: $font-name-bold, sans-serif;
+    font-size: $font-size;
+    margin-bottom: $margin-bottom;
+    text-transform: uppercase;
+}
+
 @mixin empty-space-m($num) {
     margin-top: $num;
 }
 
 @mixin empty-space-p($num) {
     padding-top: $num;
+}
+
+@mixin explanation($color, $font-size) {
+    color: $color;
+    font-family: $font-name-bold;
+    font-size: $font-size;
+    margin-bottom: .25em;
+    text-transform: uppercase;
 }
 
 a {
@@ -73,11 +90,12 @@ p {
     margin-bottom: 1.8em;
 }
 
+h1 {
+    @include headline(58px, 40px);
+}
+
 h2 {
-    font-family: $font-name-bold, sans-serif;
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    @include headline(24px, 20px);
 }
 
 input[type='text'], input[type='email'], input[type='password'], textarea {
@@ -112,7 +130,16 @@ input[type='submit'], input[type='button'] {
     margin-bottom: 1.3em;
 }
 
+.explanation-gray {
+    @include explanation(#ccc, 24px);
+}
+
+.explanation-brown {
+    @include explanation($active-color, 16px);
+}
+
 .jumbotron-heading {
+    color: #fff;
     font-size: 36px;
 }
 
@@ -176,13 +203,13 @@ input[type='submit'], input[type='button'] {
     padding: 0;
 
     h3 {
+        color: #333;
         font-family: $font-name-bold;
         line-height: 1.5em;
         text-transform: uppercase;
     }
 
     .row {
-        font-family: $font-name-regular, sans-serif;
         padding: 80px 0 55px 0;
 
         div {
@@ -191,12 +218,20 @@ input[type='submit'], input[type='button'] {
         }
     }
 
+    .row, .row-fluid {
+        font-family: $font-name-regular, sans-serif;
+    }
+
     .finally {
         border-bottom: 1px solid $border-shadow-color;
 
         .row {
             padding-bottom: 0;
         }
+    }
+
+    .container-fluid {
+        padding: 0;
     }
 }
 
@@ -220,11 +255,11 @@ input[type='submit'], input[type='button'] {
     }
 
     .copyright {
-        background-color: $passive-color;
+        background-color: $copyright-bg-color;
 
         .row {
             color: $copyright-text-color;
-            padding: 30px 0 15px;
+            padding: 30px 0 10px;
             text-align: center;
 
             p, a {
