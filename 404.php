@@ -14,54 +14,40 @@
 </head>
 <body>
     <div class="main-wrapper">
-        <header class="header container-fluid">
+        <header class="container-fluid header">
             <!-- BEGIN: top-menu -->
-            <div class="row">
-                <nav class="navbar-custom navbar navbar-fixed-top navbar-light bg-faded">
-                    <div class="container">
-                        <!-- BEGIN: navbar -->
-                        <div class="row">
-                            <div class="collapse" id="exCollapsingNavbar">
-                                <div class="bg-inverse p-a-1">
-                                    <h4>Collapsed content</h4>
-                                    <span class="text-muted">Toggleable via the navbar brand.</span>
-                                </div>
-                            </div>
-                            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-                                &#9776;
-                            </button>
-                            <div class="collapse navbar-toggleable-xs">
-                                <img class="navbar-brand" src="images/main-logo.png">
-                                <ul class="nav navbar-nav">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Features</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Pricing</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="reservation nav-link" href="#">Reservation</a>
-                                    </li>
-                                </ul>
+            <nav class="navbar-custom navbar navbar-fixed-top navbar-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="collapse" id="collapsingNavbar">
+                            <div class="bg-inverse p-a-1">
+                                <h4>Collapsed content</h4>
+                                <span class="text-muted">Toggleable via the navbar brand.</span>
                             </div>
                         </div>
-                        <!-- END: navbar -->
+                        <button class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#collapsingNavbar">
+                            &#9776;
+                        </button>
+                        <div class="collapse navbar-toggleable-xs">
+                            <img class="navbar-brand" src="images/main-logo.png">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                                <li class="nav-item"><a class="reservation nav-link" href="#">Reservation</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
             <!-- END: top-menu -->
         </header>
 
         <!-- BEGIN: content -->
-        <div class="content page-404 gray-block container-fluid">
-            <div class="container">
-                <!-- BEGIN: 404-page -->
+        <div class="container-fluid content gray-block">
+            <!-- BEGIN: 404-page -->
+            <div class="container page-404">
                 <div class="row">
                     <div class="col-md-6">
                         <img src="images/flat-desktop.png" class="img-fluid" alt="no-image">
@@ -74,14 +60,14 @@
                         <a href="#" class="button">Back home</a>
                     </div>
                 </div>
-                <!-- END: 404-page -->
             </div>
+            <!-- END: 404-page -->
         </div>
         <!-- END: content -->
 
         <footer class="footer">
-            <div class="container">
-                <!-- BEGIN: footer-information -->
+            <!-- BEGIN: footer-information -->
+            <div class="container footer-information">
                 <div class="row">
                     <div class="col-md-3">
                         <h3>EDENA by Little Neko</h3>
@@ -108,20 +94,20 @@
                         </form>
                     </div>
                 </div>
-                <!-- END: footer-information -->
             </div>
+            <!-- END: footer-information -->
 
+            <!-- BEGIN: copyright -->
             <div class="container-fluid copyright">
                 <div class="container">
-                    <!-- BEGIN: copyright -->
                     <div class="row">
                         <div class="col-md-12">
-                            <p class="">Copyright © 2015 Little NEKO / All rights reserved.</p>
+                            <p>Copyright © 2015 Little NEKO / All rights reserved.</p>
                         </div>
                     </div>
-                    <!-- END: copyright -->
                 </div>
             </div>
+            <!-- END: copyright -->
         </footer>
     </div>
 
